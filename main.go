@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	port := 8085
+	port := 8080
 
 	h1 := func(w http.ResponseWriter, r *http.Request) {
 		log.Printf(">> Nova request - %s %s\n", r.Method, r.URL)
