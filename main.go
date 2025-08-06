@@ -12,7 +12,7 @@ func main() {
 
 	h1 := func(w http.ResponseWriter, r *http.Request) {
 		log.Printf(">> Nova request - %s %s\n", r.Method, r.URL)
-		io.WriteString(w, "Oier!\n")
+		io.WriteString(w, "Hello!\n")
 	}
 
 	http.HandleFunc("/", h1)
